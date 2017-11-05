@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="UTF-8">
+		<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		
+<div class ="col-lg-4"></div>
+<div class="col-lg-4">
+	
+ <div id="form_name">
+      <div class="firstnameorlastname">
+       <form name="form">
+       <div id="errorBox">
+</div>
+<input class="input_name" id="name" name="Name" placeholder="First Name" type="text" value=""><br><span id="fname"></span>
+<br>
+        <input class="input_name1" id="lname" name="LastName" placeholder="Last Name" type="text" value=""><br><span id="lastname"></span>
+         
+      </form>
+</div>
+<br>
+<div>
+        <input class="input_email" id="email" name="Email" placeholder="Your Email" type="text" value=""><br><span id="email1"></span>
+      </div>
+      <br>
+<div>
+        <input class="input_phone" id="phone" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="enterphone" placeholder="Phone" type="text" maxlength="10"><br><span id="phone1"></span>
+      </div>
+<div>
+<br>
+<br>
+       <textarea rows="5" cols="50" id="address" name="address" placeholder="Address" style="resize: none; height: 122px;"></textarea><br><span id="address1"></span><br>
+      </div>
+
+<div class="row">
+<div class="col-lg-6">
+<br>
+		<label class="label">Select Your Age</label> 
+		</div> 
+		<div class="col-lg-6">
+        <select id="age" name="age">
+          <option selected="" value="">Select Your Age</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+		</select><span id="age1"></span><br>
+		</div>
+		</div>
+		
+		
+
+		<div class="row genn">
+		<div class="col-lg-6">
+		<label>Select Your Gender</label>
+		</div>
+		<div class="col-lg-6"> 
+		<select id="gender" name="gender"><span id="gender1"></span>
+        <option selected="" value=""><span>Select Your Gender</span></option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="others">others</option>
+        </select>
+        <span id="gender1"></span>
+		</div>
+		</div>
+		
+   
+  
+    
+      <div class="row statt">
+      <div class="col-lg-6">
+      <label>Select Your Status</label>
+      </div> 
+      <div class="col-lg-6">
+      <div class="radio_button in radio_inline"><span id="radiobutton1"></span>
+      <input class="radio_button" name="radiobutton"  type="radio" value="single" checked> 
+      <label>single</label>
+      <input id="radio_button" name="radiobutton" type="radio" value="married">
+      <label>married</label>
+      </div>
+      </div>
+      </div>
+       <br>
+      <br>
+      <div>
+      <label>Display my contact to public</label><br>
+      <input name="checkValue" class="checkn" type="checkbox" checked><span class="yes">Yes</span><span class="no">No</span><br>
+      </div>
+<div>
+       <button id="button">Submit</button>
+</div>
+     
+</div>
+
+</div>
+<div class="col-lg-4"></div>
+</div>
+
+
+</div>
+  
+</body>
+<script src="js/validate.js"></script>
+</html>
